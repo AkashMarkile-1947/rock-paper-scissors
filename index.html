@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="initial-screen">
+            <h2 class="sub-heading">Choose An option</h2>
+            <div class="choice-container wrapper">
+                <div id="rock" class="block rock" onclick="choose('rock')">ROCK<span>🪨</span></div>
+                <div id="paper" class="block paper" onclick="choose('paper')">PAPER <span>📃</span> </div>
+                <div id="scissors" class="block scissors" onclick="choose('scissors')">SCISSORS <span>✂️</span></div>
+            </div>
+        </div>
+        <div class="result-screen hide">
+        </div>
+        <button onclick="location.reload()">Retry</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

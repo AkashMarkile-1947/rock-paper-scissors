@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block {
+    height: 100px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    flex-direction: column-reverse;
+    font-size: 1.2rem;
+}
+.block span {
+    font-size: 2.5rem;
+}
+.rock {
+    background-color: darkslategray;
+}
+.paper {
+    background-color: hsl(34, 57%, 85%);
+}
+.scissors {
+    background-color:lemonchiffon;
+}
+.hide {
+    display: none;
+}
+.won-bg {
+    box-shadow: 5px 5px 15px hsl(120, 100%, 70%);
+}
+.lost-bg {
+    box-shadow: 5px 5px 15px hsl(0, 100%, 70%);
+}
+.tied-bg {
+    box-shadow: 5px 5px 15px hsl(60, 100%, 70%);
+}
+.won {
+    color: green;
+}
+.tied {
+    color: yellow;
+}
+.lost {
+    color: red;
+}
+button {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: gray;
+}
